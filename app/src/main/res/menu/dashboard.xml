@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.livrogoogleandroid.jordi.livroandroid.Dashboard" >
+
+    <item android:id="@+id/sair"
+        android:title="@string/sair"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        />
+
+</menu>

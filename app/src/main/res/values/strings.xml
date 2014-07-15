@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Boa Viagem</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- string activity login -->
+
+    <string name="usuario">Informe o usuario</string>
+    <string name="senha">Informe a senha</string>
+    <string name="entrar">Entrar</string>
+
+    <!-- Mensagens de erros -->
+    <string name="erro_autenticacao">Usuario e/ou senha errado</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+
+    <!-- string activity dashboard -->
+
+    <string name="novo_gasto">Novo gasto</string>
+    <string name="nova_viagem">Nova viagem</string>
+    <string name="minhas_viagens">Minhas viagens</string>
+    <string name="configuracoes">configurações</string>
+    <string name="title_activity_nova_viagem">Nova Viagem</string>
+    <string name="sair">Sair</string>
+
+    <!-- string activity nova viagem -->
+
+    <string name="remover_viagem">Excluir viagem</string>
+    <string name="destino">Destino</string>
+    <string name="tipo_da_viagem">Tipo da viagem</string>
+    <string name="lazer">Lazer</string>
+    <string name="negocios">Negocios</string>
+    <string name="dtchegada">Data de Chegada</string>
+    <string name="dtsaida">Data de Saida</string>
+    <string name="selecione">Selecione</string>
+    <string name="orcamento">orcamento</string>
+    <string name="quantidade_de_pessoas">Quantidade de pessoas</string>
+    <string name="criar_nova_viagem">Criar viagem</string>
+
+    <!-- string activity novo gasto -->
+
+    <string name="title_activity_novo_gasto">Novo Gasto</string>
+    <string name="valor">Valor</string>
+    <string name="categoria">Categoria</string>
+    <string name="gastei">Gastei</string>
+    <string name="local">Local do gasto</string>
+    <string name="descricao">Descrição</string>
+    <string name="data_gasto">Data do gasto</string>
+    <string name="selecioneData">Selecione a data</string>
+
+    <string-array name="categoria_gasto">
+        <item>Alimentação</item>
+        <item>Combustivel</item>
+        <item>Transporte</item>
+        <item>Hospedagem</item>
+        <item>Outros</item>
+    </string-array>
+
+    <string name="title_activity_viagem_list">Lista de Viagens</string>
+    <string name="title_activity_gasto_list">GastoListActivity</string>
+
+</resources>
