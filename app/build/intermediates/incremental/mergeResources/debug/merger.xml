@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res" >
+            <file
+                name="ic_launcher"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/values-w820dp/dimens.xml"
+                qualifiers="w820dp-v13" >
+                <dimen name="activity_horizontal_margin" >64dp
+                </dimen>
+            </file>
+            <file
+                name="ic_launcher"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/drawable-ldpi/ic_launcher.png"
+                qualifiers="ldpi-v4"
+                type="drawable" />
+            <file
+                name="novo_gasto"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/menu/novo_gasto.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="gasto_list"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/menu/gasto_list.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="viagem_list"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/menu/viagem_list.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="nova_viagem"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/menu/nova_viagem.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="dashboard"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/menu/dashboard.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="my"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/menu/my.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="ic_launcher"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/values/styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- Customize your theme here. -->
+                </style>
+            </file>
+            <file
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/values/colors.xml"
+                qualifiers="" >
+                <color name="categoria_alimentacao" >#9FC5F8
+                </color>
+                <color name="categoria_hospedagem" >#6FA8DC
+                </color>
+                <color name="titulo" >#015488
+                </color>
+                <color name="categoria_transporte" >#0099CC
+                </color>
+                <color name="categoria_outros" >#ACBFD5
+                </color>
+            </file>
+            <file
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/values/strings.xml"
+                qualifiers="" >
+                <string name="erro_autenticacao" >Usuario e/ou senha errado
+                </string>
+                <string name="title_activity_dashboard" >Dashboard
+                </string>
+                <string name="selecioneData" >Selecione a data
+                </string>
+                <string name="title_activity_configuracoes" >Configurações
+                </string>
+                <string name="orcamento" >orcamento
+                </string>
+                <string name="tipo_da_viagem" >Tipo da viagem
+                </string>
+                <string name="valor_limite_sumario" >Notifica quando os gastos ultrapassarem o percentual informado
+                </string>
+                <string name="senha" >Informe a senha
+                </string>
+                <string name="erro_salvar" >Erro ao salvar
+                </string>
+                <string name="remover" >Remover
+                </string>
+                <string name="configuracoes" >configurações
+                </string>
+                <string name="local" >Local do gasto
+                </string>
+                <string name="destino" >Destino
+                </string>
+                <string name="entrar" >Entrar
+                </string>
+                <string name="dtchegada" >Data de Chegada
+                </string>
+                <string name="confirmacao_exclusao_viagem" >Confirmar exclusão de viagem ?
+                </string>
+                <string name="nova_viagem" >Nova viagem
+                </string>
+                <string name="categoria" >Categoria
+                </string>
+                <string name="modo_viagem_sumario" >Determina a viagem ativa com base na data atual
+                </string>
+                <string name="novo_gasto" >Novo gasto
+                </string>
+                <string name="negocios" >Negocios
+                </string>
+                <string name="selecione" >Selecione
+                </string>
+
+                <string-array name="categoria_gasto" >
+                    <item>
+Alimentação
+                    </item>
+                    <item>
+Combustivel
+                    </item>
+                    <item>
+Transporte
+                    </item>
+                    <item>
+Hospedagem
+                    </item>
+                    <item>
+Outros
+                    </item>
+                </string-array>
+
+                <string name="informe_valor_limite" >Informe o valor limite (em %)
+                </string>
+                <string name="minhas_viagens" >Minhas viagens
+                </string>
+                <string name="dtsaida" >Data de Saida
+                </string>
+                <string name="valor" >Valor
+                </string>
+                <string name="nao" >Não
+                </string>
+                <string name="gasto_realizados" >Gasto realizados
+                </string>
+                <string name="modo_viagem" >Modo Viagem
+                </string>
+                <string name="gastei" >Gastei
+                </string>
+                <string name="title_activity_novo_gasto" >Novo Gasto
+                </string>
+                <string name="erro_selecionar_viagem" >Erro ao selecionar viagem
+                </string>
+                <string name="criar_nova_viagem" >Criar viagem
+                </string>
+                <string name="title_activity_nova_viagem" >Nova Viagem
+                </string>
+                <string name="manter_conectado" >Manter conectado
+                </string>
+                <string name="preferences" >Configurações
+                </string>
+                <string name="data_gasto" >Data do gasto
+                </string>
+                <string name="title_activity_viagem_list" >Lista de Viagens
+                </string>
+                <string name="editar" >Editar
+                </string>
+                <string name="usuario" >Informe o usuario
+                </string>
+                <string name="hello_world" >Hello world!
+                </string>
+                <string name="sair" >Sair
+                </string>
+                <string name="quantidade_de_pessoas" >Quantidade de pessoas
+                </string>
+                <string name="registro_salvo" >Registro Salvo
+                </string>
+                <string name="opcoes" >Opções
+                </string>
+                <string name="descricao" >Descrição
+                </string>
+                <string name="action_settings" >Settings
+                </string>
+                <string name="app_name" >Boa Viagem
+                </string>
+                <string name="remover_viagem" >Excluir viagem
+                </string>
+                <string name="title_activity_gasto_list" >GastoListActivity
+                </string>
+                <string name="sim" >Sim
+                </string>
+                <string name="lazer" >Lazer
+                </string>
+                <string name="valor_limite" >Alerta de gastos
+                </string>
+            </file>
+            <file
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/values/dimens.xml"
+                qualifiers="" >
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+                <dimen name="activity_horizontal_margin" >16dp
+                </dimen>
+            </file>
+            <file
+                name="activity_login"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/layout/activity_login.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_novo_gasto"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/layout/activity_novo_gasto.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_viagem_list"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/layout/activity_viagem_list.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_dashboard"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/layout/activity_dashboard.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_nova_viagem"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/layout/activity_nova_viagem.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_gasto_list"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/layout/activity_gasto_list.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="minhas_viagens"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/drawable-hdpi/minhas_viagens.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="configuracoes"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/drawable-hdpi/configuracoes.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="novo_gasto"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/drawable-hdpi/novo_gasto.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="logo"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/drawable-hdpi/logo.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="negocios"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/drawable-hdpi/negocios.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="lazer"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/drawable-hdpi/lazer.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="nova_viagem"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/drawable-hdpi/nova_viagem.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="preferences"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/xml/preferences.xml"
+                qualifiers=""
+                type="xml" />
+            <file
+                name="configuracoes"
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/menu/configuracoes.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/values/ids.xml"
+                qualifiers="" >
+                <item
+                    name="erro_salvar"
+                    type="id">
+Erro ao salvar
+                </item>
+            </file>
+        </source>
+        <source path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/build/generated/res/rs/debug" />
+        <source path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/build/generated/res/generated/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/debug/res" />
+    </dataSet>
+
+</merger>

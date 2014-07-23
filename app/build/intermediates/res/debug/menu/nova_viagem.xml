@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.livrogoogleandroid.jordi.livroandroid.NovaViagem" >
+
+    <item android:id="@+id/nova_viagem"
+        android:title="@string/nova_viagem"
+        android:icon="@android:drawable/ic_menu_add"/>
+
+    <item
+        android:id="@+id/remover"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="@string/remover_viagem"
+        />
+
+</menu>
+<!-- From: file:/home/jordi/AndroidStudioProjects/LivroAndroid/app/src/main/res/menu/nova_viagem.xml -->
