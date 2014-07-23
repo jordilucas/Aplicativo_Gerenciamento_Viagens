@@ -3,6 +3,8 @@ package com.livrogoogleandroid.jordi.livroandroid;
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.content.ContentValues;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,18 +12,24 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.Spinner;
-
-import com.livrogoogleandroid.jordi.livroandroid.R;
-
+import android.widget.TextView;
 import java.util.Calendar;
+import java.util.Date;
 
 public class NovoGasto extends Activity {
 
     private int ano, mes, dia;
     private Button dataGasto;
-
+    private TextView destino;
     private Spinner categoria;
+    private EditText valor;
+    private EditText descricao;
+    private EditText local;
+    private Date data;
+    private DataBaseHelper helper;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +49,17 @@ public class NovoGasto extends Activity {
 
         categoria = (Spinner)findViewById(R.id.categoria);
         categoria.setAdapter(adapter);
+
+
+
+        destino = (TextView)findViewById(R.id.destino);
+        destino.setText("Fortaleza");
+
+        valor = (EditText)findViewById(R.id.valor);
+        descricao = (EditText)findViewById(R.id.descricao);
+        local = (EditText)findViewById(R.id.local);
+
+
 
 
     }
@@ -88,8 +107,30 @@ public class NovoGasto extends Activity {
             dia = dayOfMonth;
 
             dataGasto.setText(dia + "/" + (mes+1) + "/" + ano);
-
+            data = criarData(ano, mes, dia);
         }
     };
+
+    public void registrarGasto(View view){
+
+        ContentValues values = new ContentValues();
+
+        values.put("valor", valor.getText().toString());
+        values.put("descricao", descricao.getText().toString());
+        values.put("local", local.getText().toString());
+        values.put("categoria", categoria.getSelectedItem().toString());
+
+        SQLiteDatabase db = helper.getWritableDatabase();
+        db.insert("gasto", null, values);
+
+    }
+
+    private Date criarData(int anoSelecionado, int mesSelecionado, int diaSelecionado){
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(anoSelecionado, mesSelecionado, diaSelecionado);
+        return calendar.getTime();
+
+    }
 
 }

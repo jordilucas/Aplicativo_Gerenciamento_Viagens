@@ -60,4 +60,32 @@
     <string name="title_activity_viagem_list">Lista de Viagens</string>
     <string name="title_activity_gasto_list">GastoListActivity</string>
 
+    <!-- String menus -->
+
+    <string name="remover">Remover</string>
+
+    <!-- Array string dialog viagemListActitivy -->
+
+    <string name="editar">Editar</string>
+    <string name="gasto_realizados">Gasto realizados</string>
+    <string name="opcoes">Opções</string>
+    <string name="confirmacao_exclusao_viagem">Confirmar exclusão de viagem ?</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+
+    <!-- Configurações -->
+
+    <string name="title_activity_configuracoes">Configurações</string>
+    <string name="preferences">Configurações</string>
+    <string name="modo_viagem">Modo Viagem</string>
+    <string name="modo_viagem_sumario">Determina a viagem ativa com base na data atual</string>
+    <string name="valor_limite">Alerta de gastos</string>
+    <string name="valor_limite_sumario">Notifica quando os gastos ultrapassarem o percentual informado</string>
+    <string name="informe_valor_limite">Informe o valor limite (em %)</string>
+    <string name="erro_selecionar_viagem">Erro ao selecionar viagem</string>
+    <string name="manter_conectado">Manter conectado</string>
+    <string name="registro_salvo">Registro Salvo</string>
+    <string name="erro_salvar">Erro ao salvar</string>
+
+
 </resources>

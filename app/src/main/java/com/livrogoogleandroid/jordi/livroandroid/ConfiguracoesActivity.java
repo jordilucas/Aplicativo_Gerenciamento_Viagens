@@ -2,16 +2,18 @@ package com.livrogoogleandroid.jordi.livroandroid;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.preference.Preference;
+import android.preference.PreferenceActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import com.livrogoogleandroid.jordi.livroandroid.R;
 
-public class ConfiguracoesActivity extends Activity {
+public class ConfiguracoesActivity extends PreferenceActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_configuracoes);
+        addPreferencesFromResource(R.xml.preferences);
     }
 
 

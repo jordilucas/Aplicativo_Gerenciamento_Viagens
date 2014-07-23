@@ -2,8 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.livrogoogleandroid.jordi.livroandroid.NovaViagem" >
 
-    <item android:id="@+id/novo_gasto"
-        android:title="@string/novo_gasto"
+    <item android:id="@+id/nova_viagem"
+        android:title="@string/nova_viagem"
         android:icon="@android:drawable/ic_menu_add"/>
 
     <item
