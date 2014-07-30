@@ -22,7 +22,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class NovaViagem extends Activity {
+public class ViagemActivity extends Activity {
 
     private String id;
     private DataBaseHelper helper;
@@ -37,6 +37,8 @@ public class NovaViagem extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nova_viagem);
+
+
 
         Calendar calendar = Calendar.getInstance();
         ano = calendar.get(Calendar.YEAR);

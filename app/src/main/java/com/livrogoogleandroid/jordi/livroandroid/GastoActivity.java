@@ -18,7 +18,7 @@ import android.widget.TextView;
 import java.util.Calendar;
 import java.util.Date;
 
-public class NovoGasto extends Activity {
+public class GastoActivity extends Activity {
 
     private int ano, mes, dia;
     private Button dataGasto;
@@ -50,10 +50,10 @@ public class NovoGasto extends Activity {
         categoria = (Spinner)findViewById(R.id.categoria);
         categoria.setAdapter(adapter);
 
-
+        String viagemDestino = getIntent().getExtras().getString(Constantes.VIAGEM_DESTINO);
 
         destino = (TextView)findViewById(R.id.destino);
-        destino.setText("Fortaleza");
+        destino.setText(viagemDestino);
 
         valor = (EditText)findViewById(R.id.valor);
         descricao = (EditText)findViewById(R.id.descricao);
@@ -112,15 +112,17 @@ public class NovoGasto extends Activity {
     };
 
     public void registrarGasto(View view){
-
+        SQLiteDatabase db = helper.getWritableDatabase();
         ContentValues values = new ContentValues();
 
+        values.put("categoria", categoria.getSelectedItem().toString());
+        values.put("data", dataGasto.getText().toString());
         values.put("valor", valor.getText().toString());
         values.put("descricao", descricao.getText().toString());
         values.put("local", local.getText().toString());
-        values.put("categoria", categoria.getSelectedItem().toString());
 
-        SQLiteDatabase db = helper.getWritableDatabase();
+
+
         db.insert("gasto", null, values);
 
     }
