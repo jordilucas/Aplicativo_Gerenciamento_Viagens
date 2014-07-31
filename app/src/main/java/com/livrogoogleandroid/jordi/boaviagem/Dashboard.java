@@ -1,4 +1,4 @@
-package com.livrogoogleandroid.jordi.livroandroid;
+package com.livrogoogleandroid.jordi.boaviagem;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -23,11 +23,11 @@ public class Dashboard extends Activity {
         switch (view.getId()){
 
             case R.id.novo_gasto:
-                startActivity(new Intent(this, NovoGasto.class));
+                startActivity(new Intent(this, GastoActivity.class));
                 break;
 
             case R.id.nova_viagem:
-                startActivity(new Intent(this, NovaViagem.class));
+                startActivity(new Intent(this, ViagemActivity.class));
                 break;
             case R.id.minhas_viagens:
                 startActivity(new Intent(this, ViagemListActivity.class));

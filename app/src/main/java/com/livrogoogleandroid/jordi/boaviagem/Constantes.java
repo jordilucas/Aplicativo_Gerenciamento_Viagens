@@ -1,4 +1,4 @@
-package com.livrogoogleandroid.jordi.livroandroid;
+package com.livrogoogleandroid.jordi.boaviagem;
 
 public class Constantes {
 

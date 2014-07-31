@@ -1,4 +1,4 @@
-package com.livrogoogleandroid.jordi.livroandroid;
+package com.livrogoogleandroid.jordi.boaviagem;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
@@ -59,8 +59,7 @@ public class GastoActivity extends Activity {
         descricao = (EditText)findViewById(R.id.descricao);
         local = (EditText)findViewById(R.id.local);
 
-
-
+        helper = new DataBaseHelper(this);
 
     }
 
@@ -112,6 +111,7 @@ public class GastoActivity extends Activity {
     };
 
     public void registrarGasto(View view){
+
         SQLiteDatabase db = helper.getWritableDatabase();
         ContentValues values = new ContentValues();
 

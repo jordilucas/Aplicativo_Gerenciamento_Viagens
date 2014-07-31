@@ -1,4 +1,4 @@
-package com.livrogoogleandroid.jordi.livroandroid;
+package com.livrogoogleandroid.jordi.boaviagem;
 
 import android.app.Activity;
 import android.content.Intent;

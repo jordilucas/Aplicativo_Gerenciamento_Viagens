@@ -1,12 +1,9 @@
-package com.livrogoogleandroid.jordi.livroandroid;
+package com.livrogoogleandroid.jordi.boaviagem;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import com.livrogoogleandroid.jordi.livroandroid.R;
 
 public class ConfiguracoesActivity extends PreferenceActivity {
 

@@ -1,4 +1,4 @@
-package com.livrogoogleandroid.jordi.livroandroid;
+package com.livrogoogleandroid.jordi.boaviagem;
 
 
 import android.app.AlertDialog;
@@ -23,7 +23,6 @@ import android.widget.SimpleAdapter;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -223,17 +222,17 @@ public class ViagemListActivity extends ListActivity
         switch(item){
 
             case 0://editar viagem
-                intent = new Intent(this, NovaViagem.class);
+                intent = new Intent(this, ViagemActivity.class);
                 intent.putExtra(Constantes.VIAGEM_ID, id);
                 startActivity(intent);
                 break;
 
-            case 1:
-                startActivity(new Intent(this, NovoGasto.class));
+            case 1://Novo Gasto
+                startActivity(new Intent(this, GastoActivity.class));
 
                 break;
 
-            case 2:
+            case 2://Lista de gastos
                 startActivity(new Intent(this, GastoListActivity.class));
                 break;
 
@@ -241,8 +240,9 @@ public class ViagemListActivity extends ListActivity
                 dialogConfirmacao.show();
                 break;
 
-            case DialogInterface.BUTTON_POSITIVE:
+            case DialogInterface.BUTTON_POSITIVE: //Exclusao
                 viagens.remove(viagemSelecionada);
+                removerViagem(id);
                 getListView().invalidateViews();
                 break;
 
@@ -251,6 +251,15 @@ public class ViagemListActivity extends ListActivity
                 break;
 
         }
+
+    }
+
+    private void removerViagem(String id){
+
+        SQLiteDatabase db = helper.getWritableDatabase();
+        String where [] = new String[]{ id };
+        db.delete("gasto", "viagem_id = ?", where);
+        db.delete("viagem", "_id = ?", where);
 
     }
 

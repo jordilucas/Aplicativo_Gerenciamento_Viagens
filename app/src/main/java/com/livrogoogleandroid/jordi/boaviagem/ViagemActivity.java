@@ -1,4 +1,4 @@
-package com.livrogoogleandroid.jordi.livroandroid;
+package com.livrogoogleandroid.jordi.boaviagem;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
@@ -96,13 +96,21 @@ public class ViagemActivity extends Activity {
 
             Toast.makeText(this, getString(R.string.registro_salvo), Toast.LENGTH_LONG).show();
             resultado = db.insert("viagem", null, values);
-
+            limparCampos();
 
         }
+        else if(id != null){
+
+            Toast.makeText(this, getString(R.string.edicao), Toast.LENGTH_LONG).show();
+            resultado = db.update("viagem", values, "_id = ?", new String[]{id});
+
+            limparCampos();
+        }
+
         else{
             Toast.makeText(this, getString(R.string.erro_salvar), Toast.LENGTH_LONG).show();
-            resultado = db.update("viagem", values, "_id = ?", new String[]{id});
         }
+
 
 
 
@@ -216,7 +224,7 @@ public class ViagemActivity extends Activity {
         switch(item.getItemId()){
 
             case R.id.novo_gasto:
-                startActivity(new Intent(this, NovoGasto.class));
+                startActivity(new Intent(this, GastoActivity.class));
 
                 return true;
 
@@ -231,4 +239,14 @@ public class ViagemActivity extends Activity {
         }
 
     }
+
+
+    public void limparCampos(){
+
+        destino.setText(" ");
+        orcamento.setText(" ");
+        qtdPessoas.setText(" ");
+        startActivity(new Intent(this, Dashboard.class));
+    }
+
 }
